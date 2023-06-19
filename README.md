@@ -46,7 +46,6 @@ If you want to create a local HTML5 android app
 - ![image](./image/a2.png)
 - ![image](./image/a3.png)
 - ![image](./image/a4.png)
-- ![image](./image/a7.png)
 
 <br />
 <br />
