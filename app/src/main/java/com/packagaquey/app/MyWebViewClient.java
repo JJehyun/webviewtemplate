@@ -1,4 +1,4 @@
-package com.example.app;
+package com.packagaquey.app;
 
 import android.content.Intent;
 import android.net.Uri;

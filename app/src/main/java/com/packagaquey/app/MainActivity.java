@@ -1,10 +1,13 @@
-package com.example.app;
+package com.packagaquey.app;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+import com.packagaquey.app.R;
 
 public class MainActivity extends Activity {
 
@@ -18,18 +21,15 @@ public class MainActivity extends Activity {
         mWebView = findViewById(R.id.activity_main_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.setWebViewClient(new MyWebViewClient());
+        mWebView.setWebViewClient(new WebViewClient());
 
         // REMOTE RESOURCE
-        // mWebView.loadUrl("https://example.com");
-
-        // LOCAL RESOURCE
-        // mWebView.loadUrl("file:///android_asset/index.html");
+        mWebView.loadUrl("https://naver.com");
     }
 
     @Override
     public void onBackPressed() {
-        if(mWebView.canGoBack()) {
+        if (mWebView.canGoBack()) {
             mWebView.goBack();
         } else {
             super.onBackPressed();
